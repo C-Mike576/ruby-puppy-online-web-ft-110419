@@ -16,8 +16,7 @@ class Dog
   end
   
   def self.print_all
-    uniq_name = @@name_list.uniq
-    uniq_name.each {|x| puts x}
+    @@name_list.each {|x| puts x}
   end
   
   def save
