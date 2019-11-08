@@ -18,7 +18,7 @@ class Dog
   end
   
   def self.print_all
-    @@name_list.each {|x| puts x}
+    @@name_list.each.uniq {|x| puts x}
   end
   
 end
