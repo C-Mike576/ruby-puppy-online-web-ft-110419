@@ -3,11 +3,11 @@ class Dog
   
   
   @@all = []
+  @@name_list = []
   
   def initialize(name)
-    
     @name = name
-    
+    @@name_list << name
   end
   
   def self.all 
@@ -15,7 +15,8 @@ class Dog
   end
   
   def self.print_all
-    @@name_list.each {|x| puts x}
+    uniq_name = @@name_list.uniq
+    uniq_name.each {|x| puts x}
   end
   
   def save
