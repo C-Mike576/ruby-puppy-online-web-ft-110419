@@ -25,6 +25,7 @@ class Dog
   
   def self.clear_all
     @@all.clear
+    @@name_list.clear
   end
   
   
